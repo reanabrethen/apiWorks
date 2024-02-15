@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootstrAPI</title>
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="api-section">
+        <h1>
+            Part 1: Random Dog Generator
+        </h1>
+        <div class="api-content">
+            <div class="card" style="width: 18rem;">
+                <img id='dog-img' src="https://images.dog.ceo/breeds/pug/n02110958_13023.jpg" class="card-img-top" alt="dog"/>
+                <div class="card-body">
+                  <p class="card-text">Check out some different breeds of dogs by clicking the button.</p>
+                 <button id='dog-button' type="button" class="btn btn-success">Randomize</button>
+              </div>
+        </div>
+       
+    </div>
+
+    <div class="api-section">
+        <h1>
+            Part 2: Weather App
+        </h1>
+        <div class="api-content">
+            <div class="card" style="width: 18rem;">
+                <img src="images/weatherImg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Find your weather information here.</p>
+               <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Search Coordinates</span>
+                <Input id="latitude" class="coordinates" placeholder="Latitude…" />
+                <Input id="longitude" class="coordinates" placeholder="Longitude…" />
+                <button id="weather-it-up" type="button" class="btn btn-info">Weather it Up</button>
+                </div>
+            </div>
+                <div id="temperature"></div>
+                <div id="wind"></div>
+                <div id="description"></div>
+              </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
