@@ -159,9 +159,9 @@ weatherButton.addEventListener('click', (event)=>{
             const wind = document.querySelector('#wind')
             const forecastDescription = document.querySelector('#description')
            
-            temperature.innerHTML = obj.current.temperature_2m
-            wind.innerHTML = obj.current.wind_speed_10m
-            forecastDescription.innerHTML = weatherCodeObj[obj.current.weather_code]        
+            temperature.innerHTML = `Current temperature: ${obj.current.temperature_2m}`
+            wind.innerHTML = `Current wind speed: ${obj.current.wind_speed_10m}`
+            forecastDescription.innerHTML = `Forecast: ${weatherCodeObj[obj.current.weather_code]}`       
            
             console.log(obj)
         })
